@@ -43,13 +43,11 @@ export async function createContact(req, res) {
     } catch (mailError) {
       console.error("Email notification failed:", mailError.message);
     }
-    return res
-      .status(201)
-      .json({
-        message: "Your message was saved successfully.",
-        id: saved._id,
-        emailNotificationSent: emailSent,
-      });
+    return res.status(201).json({
+      message: "Your message was saved successfully.",
+      id: saved._id,
+      emailNotificationSent: emailSent,
+    });
   } catch (error) {
     console.error("Contact submission failed:", error);
     return res
