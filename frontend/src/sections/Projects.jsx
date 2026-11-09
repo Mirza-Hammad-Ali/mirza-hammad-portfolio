@@ -1,10 +1,94 @@
-import { motion } from 'framer-motion'
-import { ArrowUpRight, Github, ExternalLink, Layers3 } from 'lucide-react'
-import SectionHeading from '../components/SectionHeading'
-import { projects } from '../data/projects'
+import { motion } from "framer-motion";
+import { ArrowUpRight, Github, ExternalLink, Layers3 } from "lucide-react";
+import SectionHeading from "../components/SectionHeading";
+import { projects } from "../data/projects";
 export default function Projects() {
-  return <section id="projects" className="section-space bg-white/[.015]"><div className="section-wrap"><SectionHeading eyebrow="Selected work" title={<>Things I've <span className="gradient-text">worked on.</span></>} text="A selection based on the projects and development work listed in my CV."/>
-    <div className="grid gap-5 md:grid-cols-2">{projects.map((p,i)=><motion.article key={p.title} initial={{opacity:0,y:25}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:i*.1}} whileHover={{y:-7}} className="glass group rounded-3xl p-7"><div className="mb-8 flex aspect-[16/7] items-center justify-center overflow-hidden rounded-2xl border border-violet-300/10 bg-gradient-to-br from-violet-900/50 via-[#171126] to-cyan-900/30"><Layers3 size={54} className="text-violet-200/70 transition duration-500 group-hover:scale-110 group-hover:rotate-6"/></div><div className="flex items-start justify-between gap-3"><h3 className="font-display text-xl font-semibold">{p.title}</h3><ArrowUpRight className="shrink-0 text-violet-300"/></div><p className="mt-4 leading-7 text-white/55">{p.description}</p><div className="mt-5 flex flex-wrap gap-2">{p.stack.map(s=><span key={s} className="rounded-full border border-white/10 px-3 py-1 text-xs text-white/55">{s}</span>)}</div><div className="mt-7 flex gap-3">{p.github ? <a className="outline-btn !px-4 !py-2 text-sm" href={p.github} target="_blank" rel="noreferrer"><Github size={15}/> Code</a> : <span className="text-xs text-white/35">Repository link to be added</span>}{p.live && <a className="outline-btn !px-4 !py-2 text-sm" href={p.live} target="_blank" rel="noreferrer"><ExternalLink size={15}/> Live demo</a>}</div></motion.article>)}</div>
-    <div className="mt-9 text-center"><a className="primary-btn" href="https://github.com/Mirza-Hammad-Ali" target="_blank" rel="noreferrer">More on GitHub <ArrowUpRight size={16}/></a></div>
-  </div></section>
+  return (
+    <section id="projects" className="section-space bg-white/[.015]">
+      <div className="section-wrap">
+        <SectionHeading
+          eyebrow="Selected work"
+          title={
+            <>
+              Things I've <span className="gradient-text">worked on.</span>
+            </>
+          }
+          text="A selection based on the projects and development work listed in my CV."
+        />
+        <div className="grid gap-5 md:grid-cols-2">
+          {projects.map((p, i) => (
+            <motion.article
+              key={p.title}
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              whileHover={{ y: -7 }}
+              className="glass group rounded-3xl p-7"
+            >
+              <div className="mb-8 flex aspect-[16/7] items-center justify-center overflow-hidden rounded-2xl border border-violet-300/10 bg-gradient-to-br from-violet-900/50 via-[#171126] to-cyan-900/30">
+                <Layers3
+                  size={54}
+                  className="text-violet-200/70 transition duration-500 group-hover:scale-110 group-hover:rotate-6"
+                />
+              </div>
+              <div className="flex items-start justify-between gap-3">
+                <h3 className="font-display text-xl font-semibold">
+                  {p.title}
+                </h3>
+                <ArrowUpRight className="shrink-0 text-violet-300" />
+              </div>
+              <p className="mt-4 leading-7 text-white/55">{p.description}</p>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {p.stack.map((s) => (
+                  <span
+                    key={s}
+                    className="rounded-full border border-white/10 px-3 py-1 text-xs text-white/55"
+                  >
+                    {s}
+                  </span>
+                ))}
+              </div>
+              <div className="mt-7 flex gap-3">
+                {p.github ? (
+                  <a
+                    className="outline-btn !px-4 !py-2 text-sm"
+                    href={p.github}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Github size={15} /> Code
+                  </a>
+                ) : (
+                  <span className="text-xs text-white/35">
+                    Repository link to be added
+                  </span>
+                )}
+                {p.live && (
+                  <a
+                    className="outline-btn !px-4 !py-2 text-sm"
+                    href={p.live}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <ExternalLink size={15} /> Live demo
+                  </a>
+                )}
+              </div>
+            </motion.article>
+          ))}
+        </div>
+        <div className="mt-9 text-center">
+          <a
+            className="primary-btn"
+            href="https://github.com/Mirza-Hammad-Ali"
+            target="_blank"
+            rel="noreferrer"
+          >
+            More on GitHub <ArrowUpRight size={16} />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
 }
