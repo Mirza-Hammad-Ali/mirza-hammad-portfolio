@@ -1,10 +1,10 @@
 // Add verified repository and live-demo URLs when available.
 export const projects = [
   {
-    title: 'Full-Stack E-Commerce Web Application',
+    title: 'Store-Online E-commerce Project',
     description: 'A React/Vite-based e-commerce project featuring reusable components, cart state management, authentication integration, notifications and API/data context patterns.',
     stack: ['React', 'Vite', 'JavaScript', 'Tailwind CSS', 'Clerk'],
-    github: '',
+    github: 'https://github.com/Mirza-Hammad-Ali/store-online',
     live: '',
     status: 'Portfolio project'
   },
