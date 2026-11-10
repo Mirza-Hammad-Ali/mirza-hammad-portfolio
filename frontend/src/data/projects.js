@@ -6,16 +6,15 @@ export const projects = [
       "A React/Vite-based e-commerce project featuring reusable components, cart state management, authentication integration, notifications and API/data context patterns.",
     stack: ["React", "Vite", "JavaScript", "Tailwind CSS"],
     github: "https://github.com/Mirza-Hammad-Ali/store-online",
-    image: "./assets/images",
     live: "",
     status: "Portfolio project",
   },
   {
-    title: "React + Tailwind UI Projects",
+    title: "Fox University website",
     description:
       "Responsive interface work focused on component design, state management, API integration and modern frontend workflows.",
     stack: ["React", "Tailwind CSS", "JavaScript"],
-    github: "",
+    github: "https://github.com/Mirza-Hammad-Ali/Fox-University",
     live: "",
     status: "Selected UI work",
   },
