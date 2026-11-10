@@ -1,21 +1,49 @@
-// Add verified repository and live-demo URLs when available.
+
+// Portfolio projects by Mirza Hammad
+
 export const projects = [
   {
-    title: "Store-Online E-commerce Project",
+    title: "Store-Online | React E-commerce Website",
+
     description:
-      "A React/Vite-based e-commerce project featuring reusable components, cart state management, authentication integration, notifications and API/data context patterns.",
-    stack: ["React", "Vite", "JavaScript", "Tailwind CSS"],
-    github: "https://github.com/Mirza-Hammad-Ali/store-online",
+      "A modern React-based e-commerce web application developed with Vite and Tailwind CSS. Features include reusable UI components, shopping cart state management, authentication integration, API connectivity, notifications and organized frontend architecture.",
+
+    stack: [
+      "React.js",
+      "Vite",
+      "JavaScript",
+      "Tailwind CSS",
+      "REST APIs",
+      "Authentication",
+    ],
+
+    github:
+      "https://github.com/Mirza-Hammad-Ali/store-online",
+
     live: "",
+
     status: "Portfolio project",
   },
+
   {
-    title: "Fox University website",
+    title: "Fox University | Responsive Website",
+
     description:
-      "Responsive interface work focused on component design, state management, API integration and modern frontend workflows.",
-    stack: ["React", "Tailwind CSS", "JavaScript"],
-    github: "https://github.com/Mirza-Hammad-Ali/Fox-University",
+      "A responsive university website interface developed using React.js and Tailwind CSS. Focused on reusable components, modern UI design, interactive frontend functionality, state management and API integration.",
+
+    stack: [
+      "React.js",
+      "JavaScript",
+      "Tailwind CSS",
+      "Responsive Design",
+      "API Integration",
+    ],
+
+    github:
+      "https://github.com/Mirza-Hammad-Ali/Fox-University",
+
     live: "",
+
     status: "Selected UI work",
   },
 ];
