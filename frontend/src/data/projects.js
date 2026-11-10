@@ -1,4 +1,3 @@
-
 // Portfolio projects by Mirza Hammad
 
 export const projects = [
@@ -17,8 +16,7 @@ export const projects = [
       "Authentication",
     ],
 
-    github:
-      "https://github.com/Mirza-Hammad-Ali/store-online",
+    github: "https://github.com/Mirza-Hammad-Ali/store-online",
 
     live: "",
 
@@ -39,8 +37,7 @@ export const projects = [
       "API Integration",
     ],
 
-    github:
-      "https://github.com/Mirza-Hammad-Ali/Fox-University",
+    github: "https://github.com/Mirza-Hammad-Ali/Fox-University",
 
     live: "",
 
