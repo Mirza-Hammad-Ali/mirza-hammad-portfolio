@@ -26,13 +26,13 @@ export default function Projects() {
               whileHover={{ y: -7 }}
               className="glass group rounded-3xl p-7"
             >
-            <div className="mb-8 aspect-[16/7] overflow-hidden rounded-2xl border border-violet-300/10">
-  <img
-    src={p.image}
-    alt={p.title}
-    className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
-  />
-</div>
+              <div className="mb-8 aspect-[16/7] overflow-hidden rounded-2xl border border-violet-300/10">
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+                />
+              </div>
               <div className="flex items-start justify-between gap-3">
                 <h3 className="font-display text-xl font-semibold">
                   {p.title}
