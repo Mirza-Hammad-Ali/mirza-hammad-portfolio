@@ -6,7 +6,7 @@ export const projects = [
       "A React/Vite-based e-commerce project featuring reusable components, cart state management, authentication integration, notifications and API/data context patterns.",
     stack: ["React", "Vite", "JavaScript", "Tailwind CSS"],
     github: "https://github.com/Mirza-Hammad-Ali/store-online",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&auto=format&fit=crop&q=80",
+    image: "./assets/images",
     live: "",
     status: "Portfolio project",
   },
