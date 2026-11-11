@@ -1,11 +1,5 @@
-
 import { motion } from "framer-motion";
-import {
-  ArrowUpRight,
-  Github,
-  ExternalLink,
-  Layers3,
-} from "lucide-react";
+import { ArrowUpRight, Github, ExternalLink, Layers3 } from "lucide-react";
 
 import SectionHeading from "../components/SectionHeading";
 import { projects } from "../data/projects";
@@ -18,7 +12,6 @@ export default function Projects() {
       aria-labelledby="projects-heading"
     >
       <div className="section-wrap">
-
         <SectionHeading
           eyebrow="Selected work"
           title={
@@ -42,7 +35,6 @@ export default function Projects() {
             >
               {/* Project Image */}
               <div className="mb-8 flex aspect-[16/7] items-center justify-center overflow-hidden rounded-2xl border border-violet-300/10 bg-gradient-to-br from-violet-900/50 via-[#171126] to-cyan-900/30">
-
                 {p.image ? (
                   <img
                     src={p.image}
@@ -58,7 +50,6 @@ export default function Projects() {
                     className="text-violet-200/70 transition duration-500 group-hover:scale-110 group-hover:rotate-6"
                   />
                 )}
-
               </div>
 
               {/* Project Title */}
@@ -74,9 +65,7 @@ export default function Projects() {
               </div>
 
               {/* Project Description */}
-              <p className="mt-4 leading-7 text-white/55">
-                {p.description}
-              </p>
+              <p className="mt-4 leading-7 text-white/55">{p.description}</p>
 
               {/* Technologies */}
               <div
@@ -95,7 +84,6 @@ export default function Projects() {
 
               {/* Project Links */}
               <div className="mt-7 flex flex-wrap gap-3">
-
                 {p.github ? (
                   <a
                     className="outline-btn !px-4 !py-2 text-sm"
@@ -125,7 +113,6 @@ export default function Projects() {
                     Live demo
                   </a>
                 )}
-
               </div>
             </motion.article>
           ))}
@@ -144,7 +131,6 @@ export default function Projects() {
             <ArrowUpRight size={16} />
           </a>
         </div>
-
       </div>
     </section>
   );
