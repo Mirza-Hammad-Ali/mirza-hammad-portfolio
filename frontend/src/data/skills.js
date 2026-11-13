@@ -1,9 +1,16 @@
 export const skills = [
-  { name: 'JavaScript', group: 'Frontend' }, { name: 'React.js', group: 'Frontend' },
-  { name: 'HTML5', group: 'Frontend' }, { name: 'CSS3', group: 'Frontend' },
-  { name: 'Tailwind CSS', group: 'Frontend' }, { name: 'Vite', group: 'Frontend' },
-  { name: 'Node.js', group: 'Backend' }, { name: 'Express.js', group: 'Backend' },
-  { name: 'MongoDB', group: 'Backend' }, { name: 'REST APIs', group: 'Backend' },
-  { name: 'Git', group: 'Tools' }, { name: 'GitHub', group: 'Tools' },
-  { name: 'Clerk Authentication', group: 'Tools' }, { name: 'Responsive Design', group: 'Tools' }
-]
+  { name: "JavaScript", group: "Frontend" },
+  { name: "React.js", group: "Frontend" },
+  { name: "HTML5", group: "Frontend" },
+  { name: "CSS3", group: "Frontend" },
+  { name: "Tailwind CSS", group: "Frontend" },
+  { name: "Vite", group: "Frontend" },
+  { name: "Node.js", group: "Backend" },
+  { name: "Express.js", group: "Backend" },
+  { name: "MongoDB", group: "Backend" },
+  { name: "REST APIs", group: "Backend" },
+  { name: "Git", group: "Tools" },
+  { name: "GitHub", group: "Tools" },
+  { name: "Clerk Authentication", group: "Tools" },
+  { name: "Responsive Design", group: "Tools" },
+];
