@@ -35,7 +35,7 @@ export default function About() {
             />
 
             <h3 className="font-display text-2xl font-semibold">
-              Curious by by passion.
+              Curious by nature, developer by passion.
             </h3>
 
             <p className="mt-4 leading-8 text-white/55">
