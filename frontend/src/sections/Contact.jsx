@@ -59,7 +59,7 @@ export default function Contact() {
           <div className="glass rounded-3xl p-7">
             <h3 className="font-display text-xl font-semibold">Get in touch</h3>
             <p className="mt-3 leading-7 text-white/50">
-              I'm open to connecting about pment opportunities and
+              I'm open to connecting about development opportunities and
               interesting projects.
             </p>
             <div className="mt-8 space-y-6">
