@@ -10,7 +10,7 @@ export default function Experience() {
           eyebrow="Professional journey"
           title={
             <>
-              Experience & <span className="gradient-text">internship.</span>
+              Expeence & <span className="gradient-text">internship.</span>
             </>
           }
         />
